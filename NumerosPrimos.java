@@ -17,13 +17,13 @@ public class NumerosPrimos {
     }
 
     public static void imprimirPrimos(int ini, int fin){
-        if(ini < 0 || ini >= fin){
+        if(ini < 0 || ini > fin){
             System.out.println("Numeros incorrectos!");
         }
         else{
             int conPrimos = 0;
             System.out.println("Buscando primos...");
-            for (int i = ini; i < fin; i++) {
+            for (int i = ini; i <= fin; i++) {
                 if(esPrimo(i)){
                     System.out.println(i);
                     conPrimos++;
